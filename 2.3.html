@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+ 		em{ font-size: 20px; 
+			color:red;
+ 			}
+ 	</style> 
+ 	<link rel="stylesheet" type="text/css" href="css/miestilo.css">
+</head>
+<body>
+
+<h1>2.3 CONCEPTOS BASICOS SOBRE ESTILOS</h1>
+
+	<h2>Estilos en linea</h2>
+	<p style=”font-size: 20px; color:orange;”>Mi texto</p> 
+	
+
+	<h2>Estilos enbebidos</h2>
+	<em>Embebido</em>
+
+	<br>
+
+	<h2>Archivos Externos</h2>
+	<span>estilos externos</span>
+
+	<br>
+	<br>
+
+	<h2>Referenciando etiquetas </h2>
+	<small>Referenciando palabra clave</small>
+	<small id="small">Referenciando con ID</small>
+	<small class="small">Referenciando con Class</small>
+	<small name="small">Referenciando con atributo</small>
+	<small name="fisixsiempre">Referenciando con atributo usando expresion regular ^ </small>
+	<small name="lafisi">Referenciando con atributo usando expresion regular $</small>
+	<small name="soyfisiano">Referenciando con atributo usando expresion regular *</small>
+
+	<h2>Referenciando con psudoclases</h2>
+	<div>
+		<blockquote>blockquote 1</blockquote>
+		<blockquote>blockquote 2</blockquote>
+		<blockquote>blockquote 3</blockquote>
+		<blockquote>blockquote 4</blockquote>
+	</div>
+
+	<div>
+		<div class="number">Impar</div>
+		<div class="number">Par</div>
+		<div class="number">Impar</div>
+		<div class="number">Par</div>
+	</div>
+
+	<div class="padre">
+		<div class="hijoDirecto">
+
+			<div class="hijoIzquierda">
+				
+			</div>
+			<div class="hijoMedio">
+				medio
+			</div>
+			<div class="hijoDerecha">
+				
+			</div>
+		</div>
+	</div>
+
+	<div class="padre2">
+		<div></div>
+		<div></div>
+		<div class="hijo-padre2"></div>
+		<div>derecha 1</div>
+		<div>derecha 2</div>
+		<div>derecha 3</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,97 @@
+ *{
+ 	margin:0;
+ 	padding: 0;
+ }
+
+ span { font-size: 30px;color:green; }
+
+small{
+	color:blue;
+	font-size: 10px;
+}
+
+ #small{
+	color:red;
+	font-size:20px; 
+ }
+
+ .small{
+	color:orange;
+	font-size: 30px;
+ }
+
+small[name="small"]{
+		color:green;
+		font-size: 35px;
+}
+
+small[name*="fisi"]{
+	color:gray;
+	font-size: 45px;
+}
+
+small[name^="fisi"]{
+	color:brown;
+	font-size: 40px;
+}
+
+small[name$="fisi"]{
+	color:red;
+	font-size: 40px;
+}
+
+
+
+blockquote:nth-child(1){
+	color:green;
+}
+blockquote:nth-child(2){
+	color:blue;
+}
+blockquote:nth-child(3){
+	color:black;
+}
+blockquote:nth-child(4){
+	color:orange;
+}
+
+
+.number:first-child{
+	font-size: 30px;
+}
+
+.number:last-child{
+	font-size: 40px;
+}
+
+:not(h1){
+	margin:0;
+}
+
+.number:nth-child(odd){
+	color:yellow;
+}
+
+.number:nth-child(even){
+	color:red;
+}
+
+.padre > div{
+	background-color: red;
+	color:white;
+	height: 100px;
+	width: 500px;
+}
+
+div.hijoIzquierda + div{
+	background-color: orange;
+	height: 40px;
+	width: 100px;
+}
+
+div.hijo-padre2 ~ div{
+	height: 100px;
+	width: 100px;
+	color:white;
+	background: gray;
+}

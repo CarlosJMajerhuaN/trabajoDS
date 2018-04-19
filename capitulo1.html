@@ -1,4 +1,4 @@
-<!-- indicar el tipo de documento ue estamos creando -->
+<!-- indicar el tipo de documento que estamos creando -->
 <!DOCTYPE html>
 <!-- atributo lang define el idioma humano del contenido del documento -->
 <html lang="es">
@@ -6,39 +6,100 @@
 general acerca del documento e incorporamos los archivos externos con estilos  -->
 <head>
 <!-- la etiqueta meta define el
-juego de caracteres a utilizar para mostrar el documento, podemos cambiar el tipo iso por otro que usaremos en nuestro documento-->
-  <meta charset="iso-8859-1">
+juego de caracteres a utilizar para mostrar el documento, podemos cambiar el tipo iso por otro según lo que usaremos en nuestro documento-->
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
   <!-- podemos agregar otras etiquetas <meta> como description o keywords para definir otros aspectos de la página web -->
   <meta name=”description” content=”Ejemplo de HTML5”>
   <meta name=”keywords” content=”HTML5, CSS3, Javascript”>  
   <!-- título del documento -->
   <title>html5</title>
   <!-- <link> es usado para incorporar estilos,desde archivos externos.  -->
-  <link rel=”stylesheet” href=”misestilos.css”> 
-
+  <link rel="stylesheet" href="css/capitulo1.css"> 
 </head>
-<!-- El cuerpo representa la parte visible de todo documento -->
+
+<!-- El cuerpo representa la parte visible de todo el documento -->
 <body>
+
   <!-- <header> provee información introductoria (títulos, subtítulos, logos) del documento -->
   <header>
     <h1>HOLA HTML5</h1>
   </header>
+
   <nav>
-    <ul>
-      <li>principal</li>
-      <li>fotos</li>
-      <li>videos</li>
-      <li>contacto</li>
-    </ul>
+    <a href="capitulo2.html">capítulo 2</a></li>
   </nav> 
-  <section>Aqui va el contenido principal</section>
-  <aside>esta ubicado del lado derecho o izquierdo de nuestra página de ejemplo, la etiqueta no tiene una posición predefinida y con informacion adicional del contenido
+
+  <section>
+    <!-- <strong> da importancia a una frase o palabra -->
+    Aqui va el <strong>contenido principal</strong>
+
+    <!-- elemento <article> tendrá su propia estructura. Para definir esta estructura, podemos aprovechar la versatilidad de los elementos <header> y <footer> -->
+    <article>
+      <!-- <mark> resalta un texto que tiene relevancia en una situación en particular
+        o que ha sido mostrado en respuesta de la actividad del usuario.  -->
+      informacion relevante-<mark>primera parte</mark>
+
+      <header>
+        <!-- El elemento <hgroup> es necesario cuando tenemos un título y subtítulo o más etiquetas H juntas en la misma cabecera. Este elemento puede contener solo etiquetas H  -->
+        <hgroup>
+          <h1>Título del mensaje uno</h1>
+          <h2>Subtítulo del mensaje uno</h2>
+        </hgroup>
+      </header>
+        <!-- <em> pone énfasis a las frases -->
+        Este es el texto de mi <em>primer mensaje</em>
+        <!-- <cite> es usado para mostrar el título de un trabajo (libro, película, poema,
+        etc…).  -->
+        <span>Amo la película <cite>Tentaciones</cite></span> 
+      
+      <footer>
+        <address>
+          <a href=”http://www.jdgauchat.com”>JD Gauchat</a>
+        </address>
+        <p>comentarios (0)</p>
+      </footer> 
+    </article>
+
+    <!-- <figure> Este elemento representa una porción independiente de contenido (por ejemplo,imágenes, diagramas o videos) que son referenciadas desde el contenido principal. Esta es información que puede ser removida sin afectar el fluido del resto del contenido -->
+    <figure>
+      <img src="https://www.formulaclick.com/wp-content/uploads/2016/06/html5.jpg">
+      <!-- <figcaption> Este elemento es utilizado para mostrar una leyenda o pequeño texto relacionado con el contenido de un elemento <figure>, como la descripción de una imagen.  -->
+      <figcaption>
+      Esta es la imagen del primer mensaje
+      </figcaption>
+    </figure>
+
+    <article>
+      informacion relevante-<mark>segunda parte</mark>
+
+      <header>
+        <h1>Título del mensaje dos</h1>
+        <time datetime="2011-10-12" pubdate>publicado 12-10-2011</time>
+      </header>
+
+      Este es el texto de mi <em>segundo mensaje</em>
+      <span>Amo la película <cite>Tentaciones</cite></span> 
+
+      <footer>
+          <address>
+              <a href=”http://www.jdgauchat.com”>JD Gauchat</a>
+            </address>
+        <p>comentarios (0)</p>
+      </footer> 
+    </article> 
+
+  </section>
+
+  <aside>
+    esta ubicado del lado derecho o izquierdo de nuestra página de ejemplo, la etiqueta no tiene una posición predefinida y con informacion adicional del contenido
     <blockquote>Mensaje número uno</blockquote>
     <blockquote>Mensaje número dos</blockquote>
   </aside>
+
   <!--la sección del footer representa el final (o pie) del documento y esta parte de la página web es normalmente usada para compartir información general sobre el autor o la organización detrás del proyecto -->
   <footer>
-  Derechos Reservados &copy; 2010-2011
+    <!-- <small> Este elemento representa contenido al margen, como letra pequeña (por ejemplo, descargos, restricciones legales, declaración de derechos, etc…).  -->
+    <small>Derechos Reservados &copy; 2010-2011</small> 
   </footer>
   
 </body>

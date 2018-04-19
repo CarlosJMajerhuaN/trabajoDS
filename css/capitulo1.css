@@ -1,0 +1,60 @@
+body>header>h1{
+  outline: 1px solid red;
+  text-align: center;
+}
+
+body>nav{
+  outline: 1px solid orange;
+}
+
+body>section{
+ outline: 1px solid rgb(0, 255, 128);
+ width: 70%;
+ margin: 10px 5px;
+ display: inline-block;
+
+}
+
+body>section article{
+  outline: 1px solid rgb(93, 95, 245);
+  margin: 10px;
+
+}
+
+figure{
+  outline: 1px solid rgb(169, 226, 35);
+
+}
+
+figure>img{
+  width: 400px;
+  height: 200px;
+}
+
+aside{
+  outline: 1px solid rgb(19, 20, 83);
+  width: 25%;
+  margin: 10px 0;
+  position: relative;
+  float: right;
+  display: inline-block;
+  height: 650px;
+}
+
+body>footer{
+  outline: 1px solid rgb(150, 20, 85);
+  margin: 10px;
+
+}
+
+article>header{
+  outline: 1px solid rgb(222, 250, 123);
+  margin: 10px ;
+
+}
+
+article>footer{
+  outline: 1px solid rgb(93, 240, 245);
+  margin:10px ;
+
+}
